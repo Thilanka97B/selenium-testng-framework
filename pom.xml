@@ -48,12 +48,11 @@
         <plugins>
            <plugin>
     <groupId>org.apache.maven.plugins</groupId>
-    <artifactId>maven-surefire-plugin</artifactId>
-    <version>3.0.0-M7</version>
+    <artifactId>maven-compiler-plugin</artifactId>
+    <version>3.8.1</version> <!-- Updated to a newer version -->
     <configuration>
-        <includes>
-            <include>**/*Test.java</include>
-        </includes>
+        <source>11</source> <!-- Use Java 11 or your installed Java version -->
+        <target>11</target>
     </configuration>
 </plugin>
         </plugins>
